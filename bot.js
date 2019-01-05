@@ -4,7 +4,7 @@ var client = new Discord.Client();
 client.on('message', message => {
   if (!message.guild) return;
 
-  if (message.content === 'shadow1') {
+  if (message.content === 'shadow3') {
     if (message.member.voiceChannel) {
       message.member.voiceChannel.join()
         .then(connection => { 
